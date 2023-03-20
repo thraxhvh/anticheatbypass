@@ -1,1 +1,7 @@
-game:GetService("StarterPlayer").StarterPlayerScripts.LocalScript:Destroy()
+if game:GetService("StarterPlayer").StarterPlayerScripts.LocalScript then
+    game:GetService("StarterPlayer").StarterPlayerScripts.LocalScript:Destroy()
+end
+task.wait(1)
+if game:GetService("StarterPlayer").StarterPlayerScripts.LocalScript then
+    game:GetService("StarterPlayer").StarterPlayerScripts.LocalScript:Destroy()
+end
